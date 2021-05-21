@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url("bg1.jpg");
+    background-size: cover;
+}
+
+.con2{
+    display:grid;
+    grid-template-areas:
+    'main main main'
+    'brief brief brief' 
+    'head head head'
+    'services services services'
+    'services services services'
+    'bann bann bann'
+      ;
+}
+
+
+#bgimg{
+    grid-area: main;
+    height: 38rem;
+  
+}
+h1{
+    color: white;
+    font-size: 50px;
+    text-shadow:0 10px 10px  black ;
+    margin: 50px;
+    
+}
+
+h3{
+    color: white;
+    
+    margin-left: 50px;
+    font-size: 25px;
+
+}
+
+.btn{
+    padding: 12px;
+    border-radius: 6px;
+    margin-left: 35px;
+    background: rgba(32, 151, 82, 0.89);
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.help{
+
+    position: fixed;
+    margin-right: 0px;
+    margin-left: 50rem;
+    padding: 12px;
+    border-radius: 25px;
+    background: rgb(9, 141, 230);
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(9, 141, 230);
+    cursor: pointer;
+}
+    
+
+.h{
+    margin-top: 180px;
+}
+
+
+#info{
+    grid-area: brief;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-family:  sans-serif;
+    padding: 35px;
+}
+
+#e{
+    grid-area: head;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 6rem;
+    color: rgba(32, 151, 82, 0.89);
+    font-size: 20px;
+    font-weight:bold;
+    
+}
+
+#e h2{
+    padding: 25px;
+}
+
+#pic{
+    grid-area: services;
+    height: 30rem;
+    
+}
+
+#bann{
+    grid-area: bann;
+    background-image:  url("banner.jpeg");
+    background-size: cover;
+    height: 25rem;
+    margin:80px 0px 30px 0px;
+}
+
+.text{
+    background:rgba(32, 151, 82, 0.89);
+    width: 35%;
+    height: 120%;
+    margin:-53px 0px 40px 80px;
+    padding:12px;
+
+}
+body{
+    background: white;
+}
+
+nav{
+    height: 63px;
+    background: rgb(255, 255, 255);
+    opacity: 95%;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    align-items: stretch;
+    font: inherit;
+    position:fixed;
+}
+
+.logo{
+
+    height: auto;
+    float: left;
+    padding-left: 5px;
+    padding-right: 13px;
+}
+.primary{
+   padding-left:40px;
+     
+}
+
+nav ul li{
+    
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    font-weight: 65;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+
+}
+
+nav li li a{
+    line-height: 20px;
+    padding: 15px;
+}
+
+nav ul li a:hover{
+    color:rgba(32, 151, 82, 0.89);
+}
+
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+    background: white;
+    padding: 10px;
+}
+nav ul li:hover >ul{
+    display: block;
+}
+nav ul ul li{
+    width: 250px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.dd2{
+    margin-left: 250px;
+    margin-top: -60px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+
+.picgrid{
+    margin-left: 5.2rem;
+    margin-right: 5.2rem;
+    max-width: 1200px;
+    
+}
+.gallery{
+    float: left;
+    padding:10px
+}
+
+.gallery img{
+   width:15rem;
+   height: 10rem;
+   margin-top: 12px;
+   transition: 0.5s;
+   border-radius: 13px;
+   z-index: -1;
+   
+}
+
+.gallery img:hover{
+    transform:scaleY(1.05);
+    
+}
+
+.desc{
+    text-align: center;
+    background: rgba(32, 151, 82, 0.89);
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    margin: -5px 15px 0px 15px;
+    padding-top: 5px;
+}
